@@ -31,7 +31,11 @@ token? For example, in the case of the first net, we want to know the
 length of the shortest firing sequence that leads to the marking where
 there is a token in s1 and a token in s3.
 
-* Net-1 
+A3: Manually test what a shortest sequence would be.
+
+* Net-1: M0={s1,s2} -> t2={s3,s4} -> t1={s1,s3}
+* Net-2: Sequence [t2,t4,t1,t3] = {s1,s3,s5,s7}
+* Net-3: Sequence [t2,t1,t4,t3,t6,t5] = {s1,s3,s5,s7,s9,s11}
 
 Q4: The three nets shown here are the first three elements of an infinite
 family of nets. We can create the n th member of the family by taking the
