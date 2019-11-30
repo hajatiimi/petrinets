@@ -35,8 +35,12 @@ there is a token in s1 and a token in s3.
 A3: Manually test what a shortest sequence would be.
 
 * Net-1: Sequence t2,t1 = {s1,s3}
-* Net-2: Sequence t2,t1,t4,t3,t1,t2,t1 = {s1,s3,s5,s7}
+* Net-2: Sequence t4,t2,t1,t3,t1,t2,t1 = {s1,s3,s5,s7}
 * Net-3: Sequence t2,t1,t4,t3,t1,t2,t1,t6,t5,t3,t4,t1,t2,t1,t3,t1,t2,t1 = {s1,s3,s5,s7,s9,s11}
+
+Note: For the Net-3 sequence, it would be better to start from the rightmost
+sub-net always, as done with the Net-2 sequence. This might shorten the 
+sequence.
 
 Q4: The three nets shown here are the first three elements of an infinite
 family of nets. We can create the n th member of the family by taking the
@@ -53,4 +57,4 @@ transitions t(i-1) and t(i-2) to solve the new sub-net.
 However, the complexity of solving the other existing sub-nets grows with
 each additional sub-net that is added. This can be seen in the results of
 A3. How much exactly the solving of the additional sub-nets grows, I can
-not say.
+not put into a mathematical formula. Ran out of time on this one unfortunately.
