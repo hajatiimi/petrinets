@@ -33,8 +33,8 @@ there is a token in s1 and a token in s3.
 
 A3: Manually test what a shortest sequence would be.
 
-* Net-1: M0={s1,s2} -> t2={s3,s4} -> t1={s1,s3}
-* Net-2: Sequence [t2,t4,t1,t3] = {s1,s3,s5,s7}
+* Net-1: Sequence [t2, t1] = {s1,s3}
+* Net-2: Sequence [t2,t1,t4,t3] = {s1,s3,s5,s7}
 * Net-3: Sequence [t2,t1,t4,t3,t6,t5] = {s1,s3,s5,s7,s9,s11}
 
 Q4: The three nets shown here are the first three elements of an infinite
@@ -43,3 +43,10 @@ family of nets. We can create the n th member of the family by taking the
 the n th Petri net in this family. Can you say something about the length
 of the shortest path that leads to a marking in which all odd-numbered
 places have a token?
+
+A4: Looking at the sequences of transitions in A3, and assuming we would
+"continue replicating the sub-nets to the right", then we would for the
+next net ("Net-4") have a sequence of transitions [t8,t7] and would end
+up with tokens in places {s13,s15}. We can repeat these pattens infinitely
+and we would need two transitions for each sub-net to have a token in all
+the odd-numbered places.
